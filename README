@@ -47,6 +47,13 @@ rails -v
 rails new .
 ```
 
+#### Start Development Server
+
+```Bash
+bundle install
+bin/rails server
+```
+
 ### Coming Soon
 
 - Configuration

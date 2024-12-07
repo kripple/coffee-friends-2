@@ -60,13 +60,19 @@ bundle install
 bin/rails server # or `bin/start`
 ```
 
+#### Database Creation & Initialization
+
+```Bash
+# rails tmp:cache:clear
+# rails db:drop
+rails db:create
+rails db:migrate
+rails db:seed
+```
+
 ### Coming Soon
 
 - Configuration
-
-- Database creation
-
-- Database initialization
 
 - How to run the test suite
 

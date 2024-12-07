@@ -1,0 +1,117 @@
+#lean_overlay {
+  position: fixed;
+  z-index: 100;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  display: none;
+}
+
+.popupContainer {
+  display: none;
+  position: absolute;
+  width: 330px;
+  height: auto;
+  left: 45%;
+  top: 80px;
+  background: #fff;
+}
+.popupContainer .popupErrors {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: -15px;
+}
+.popupContainer .popupErrors p {
+  font-size: 8pt;
+  color: red;
+  line-height: 0.5;
+}
+
+#cafe-login {
+  display: none;
+}
+
+#modal_trigger {
+  margin: 100px auto;
+  width: 100px;
+  display: block;
+}
+
+.header_title {
+  font-size: 12pt;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: #f4f4f2;
+}
+
+.btn_red {
+  background: #ed6347;
+  color: #fff;
+}
+
+.btn:hover {
+  background: #e4e4e2;
+}
+
+.btn_red:hover {
+  background: #c12b05;
+}
+
+.btn {
+  color: #666;
+  text-align: center;
+  text-decoration: none;
+}
+
+a.btn_red {
+  color: #fff;
+}
+
+.one_half {
+  width: 50%;
+  display: block;
+  float: left;
+}
+
+.one_half.last {
+  width: 45%;
+  margin-left: 5%;
+}
+
+.popupHeader {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.popupHeader {
+  background: #f4f4f2;
+  position: relative;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+}
+
+.popupHeader .modal_close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px 15px;
+  cursor: pointer;
+  color: #aaa;
+  font-size: 16px;
+  width: 12%;
+  height: 30%;
+}
+
+.modal_close img {
+  width: 100%;
+  z-index: 1;
+}
+
+.popupBody {
+  padding: 20px;
+}

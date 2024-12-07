@@ -1,0 +1,77 @@
+/* @import 'foundation/functions';
+
+$header-logo-color: #d15271;
+$header-links-color: #5e0231;
+$main-headers-font-color: #5e0231;
+$accent-blue-color: #3e6a81;
+$maroon-text-color: #5e0231;
+$light-blue: #60c2d2;
+$darker-blue: #49a4b3;
+$white: #ffffff;
+$smoke: #eeeeee;
+$steel: #666666;
+$jet: #222222;
+$raspberry: #d15271;
+
+$include-html-classes: true;
+$include-html-global-classes: $include-html-classes;
+$row-width: 100%;
+$font-family-serif: 'Quicksand', serif;
+$font-family-monospace: 'Nunito', serif;
+$body-font-family: $font-family-serif;
+$header-font-color: $main-headers-font-color;
+$h1-font-reduction: rem-calc(10) !default;
+$paragraph-font-family: $font-family-monospace;
+$list-font-family: $paragraph-font-family;
+$include-html-accordion-classes: $include-html-classes;
+$accordion-navigation-padding: rem-calc(16);
+$accordion-navigation-bg-color: $darker-blue;
+$accordion-navigation-hover-bg-color: scale-color(
+  $accordion-navigation-bg-color,
+  $lightness: -5%
+);
+$accordion-navigation-active-bg-color: scale-color(
+  $accordion-navigation-bg-color,
+  $lightness: -3%
+);
+$accordion-navigation-font-color: $white;
+$accordion-navigation-font-size: rem-calc(16);
+$accordion-navigation-font-family: $body-font-family;
+$button-font-family: $body-font-family;
+$button-bg-color: $raspberry;
+$input-font-family: $font-family-monospace;
+$label-font-family: $body-font-family;
+$price-title-font-family: $body-font-family;
+$price-money-font-family: $body-font-family;
+$tabs-navigation-font-family: $body-font-family;
+$topbar-bg-color: $header-bar-color;
+$topbar-height: rem-calc(80);
+$topbar-title-font-size: rem-calc(26);
+$topbar-title-font-family: 'Pacifico';
+$topbar-link-color: $header-logo-color;
+$topbar-link-color-hover: $jet;
+$topbar-link-color-active: $jet;
+$topbar-link-color-active-hover: $jet;
+$topbar-link-bg: rgba(255, 255, 255, 0);
+$topbar-link-bg-hover: rgba(255, 255, 255, 0);
+$topbar-link-bg-color-hover: rgba(255, 255, 255, 0);
+$topbar-link-bg-active: rgba(255, 255, 255, 0);
+$topbar-link-font-family: $body-font-family;
+$topbar-menu-link-color: $header-logo-color;
+$topbar-menu-icon-color: $header-logo-color;
+
+@import 'foundation'; */
+
+/* @import "foundation/components/panels";
+
+.success-panel {
+  @include panel(
+    $bg:#E0F0B2
+  );
+}
+
+.fail-panel-yellow {
+  @include panel(
+    $bg:#FFFFD1
+  );
+} */

@@ -1,0 +1,25 @@
+div.center-tags {
+  width: 90%;
+  margin: 0 auto;
+}
+.fill-margins {
+  --header-bar-color: #f4f4f4;
+  background-color: var(--header-bar-color);
+  width: 100%;
+}
+ul.center-tags li {
+  width: 16%;
+  text-align: center;
+  white-space: nowrap;
+}
+a.button-tag {
+  --light-blue: #60c2d2;
+  margin: 0;
+  border-top: 1px solid var(--light-blue);
+  border-bottom: 1px solid var(--light-blue);
+}
+
+.accordion .accordion-navigation > .content,
+.accordion dd > .button-tags-container {
+  padding: 0 !important;
+}

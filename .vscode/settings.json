@@ -1,0 +1,10 @@
+{
+  "editor.formatOnSave": true,
+  // "editor.defaultFormatter": "mbessey.vscode-rufo",
+  "[ruby]": {
+    "editor.defaultFormatter": "mbessey.vscode-rufo"
+  }
+  // "files.associations": {
+  //   "*.html.erb": "erb"
+  // },
+}

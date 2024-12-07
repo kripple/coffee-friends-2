@@ -35,17 +35,23 @@ eval "$(rbenv init -)"
 ```
 
 ```Bash
-export PATH="$HOME/.rbenv/bin:$PATH"
 export GEM_HOME=$(ruby -e 'puts Gem.user_dir')
+export PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$GEM_HOME/bin:$PATH"
 echo "-v '~> $(cat .ruby-version)'" | sudo gem install bundler
 bundle install
 ```
 
+#### Build Application
+
 ```Bash
-alias rails="$GEM_HOME/bin/rails"
 rails -v
 rails new .
+bin/rails generate controller Cafes index --skip-routes
 ```
+
+#### Linting
+
+(MacOS only) Create a file at `/etc/paths.d/<your-username>`. Add a single line that consists of `$GEM_HOME/bin` (the actual path, not the variable). This will help VSCode find `rufo`.
 
 #### Start Development Server
 

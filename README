@@ -57,7 +57,7 @@ bin/rails generate controller Cafes index --skip-routes
 
 ```Bash
 bundle install
-bin/rails server # or `bin/start`
+bin/dev
 ```
 
 #### Database Creation & Initialization

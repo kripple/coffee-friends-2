@@ -2,24 +2,57 @@
 <html>
   <head>
     <title><%= content_for(:title) || "Coffee Friends 2" %></title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="mobile-web-app-capable" content="yes">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <%= csrf_meta_tags %> <%= csp_meta_tag %> <%= yield :head %> <%# Enable PWA
+    manifest for installable apps (make sure to enable in config/routes.rb too!)
+    %> <%#= tag.link rel: "manifest", href: pwa_manifest_path(format: :json) %>
 
-    <%= yield :head %>
+    <link rel="icon" href="/icon.png" type="image/png" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/icon.png" />
 
-    <%# Enable PWA manifest for installable apps (make sure to enable in config/routes.rb too!) %>
-    <%#= tag.link rel: "manifest", href: pwa_manifest_path(format: :json) %>
+    <%# Includes all stylesheet files in app/assets/stylesheets %> <%=
+    stylesheet_link_tag :app, "data-turbo-track": "reload" %> <%#
+    javascript_importmap_tags %>
 
-    <link rel="icon" href="/icon.png" type="image/png">
-    <link rel="icon" href="/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="/icon.png">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/what-input@5.2.12/dist/what-input.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/js/foundation.min.js"
+      crossorigin="anonymous"
+    ></script>
 
-    <%# Includes all stylesheet files in app/assets/stylesheets %>
-    <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
-    <%# javascript_importmap_tags %>
+    <script src="javascript/vendor/jquery.leanModal.min.js"></script>
+    <script src="javascript/vendor/cloudinary/chosen.jquery.min.js"></script>
+    <!-- <script src="javascript/vendor/chosen.proto.min.js"></script> -->
+
+    <script src="javascript/vendor/cloudinary/jquery.cloudinary.min.js"></script>
+    <script src="javascript/vendor/cloudinary/jquery.ui.widget.min.js"></script>
+    <script src="javascript/vendor/cloudinary/jquery.fileupload.min.js"></script>
+    <script src="javascript/vendor/cloudinary/jquery.iframe-transport.min.js"></script>
+
+    <script src="javascript/cafe_filter.js"></script>
+    <script src="javascript/transactions.js"></script>
+    <script src="javascript/registration.js"></script>
+    <script src="javascript/coffee_gift_forms.js"></script>
+    <script src="javascript/googlemaps.js"></script>
+    <script src="javascript/dropdowns.js"></script>
+    <script src="javascript/gift_search.js"></script>
+
+    <script src="javascript/init.js"></script>
+    <style>
+      @font-face {
+        font-family: 'Linoette';
+        /* src: font-url('Linoette-SemiBold.ttf') format('truetype'); */
+        src: font-url('Linoette-SemiBold.otf') format('opentype');
+      }
+
+      body {
+        font-family: 'Linoette', sans-serif;
+      }
+    </style>
   </head>
 
   <body>

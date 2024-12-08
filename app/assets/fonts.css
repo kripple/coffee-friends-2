@@ -1,9 +1,9 @@
 @font-face {
-  font-family: 'Linoette SemiBold';
-  src: font-url('Linoette-SemiBold.ttf') format('truetype');
+  font-family: 'Linoette';
+  /* src: font-url('Linoette-SemiBold.ttf') format('truetype'); */
+  src: font-url('Linoette-SemiBold.otf') format('opentype');
 }
 
-/* ? */
-/* body {
-  font-family: 'Linoette SemiBold', sans-serif;
-} */
+body {
+  font-family: 'Linoette', sans-serif;
+}

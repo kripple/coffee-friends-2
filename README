@@ -70,6 +70,10 @@ rails db:migrate
 rails db:seed
 ```
 
+#### JavaScript Assets
+
+Intentionally do not include JavaScript asset handling within the Rails application.
+
 ### Coming Soon
 
 - Configuration
